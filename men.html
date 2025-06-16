@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voylla Clone - Men</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body style="background-color: #fff;">
+  <!-- Top Sale Banner -->
+  <div class="top-banner">
+    Summer Sale! Get 25% off on order above ₹1500, Use code: <strong>SUMMER25</strong> + Extra 5% off on Prepaid Orders.
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <!-- Voylla Logo -->
+      <a href="index.html">
+        <img src="images/voylla-logo.png" alt="Voylla Logo" class="logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="madhubani.html">MADHUBANI</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="collections.html">COLLECTIONS</a></li>
+      <li><a href="sterling.html">STERLING SILVER</a></li>
+      <li><a href="gifts.html">FESTIVE GIFTS</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-bar" style="position:relative;">
+  <input type="text" id="productSearchInput" placeholder="Search" />
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+       viewBox="0 0 24 24" stroke-width="1.5" 
+       stroke="currentColor" width="32" height="32">
+    <path stroke-linecap="round" stroke-linejoin="round" 
+          d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0
+             6.75 6.75a7.5 7.5 0 0 0 9.9 9.9Z" />
+  </svg>
+  <div id="productSearchResults" class="search-results"></div>
+</div>
+      <a href="user.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          viewBox="0 0 24 24" stroke-width="1.5" 
+          stroke="currentColor" width="32" height="32">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 
+            3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 
+            7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 
+            12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </a>
+      <a href="wishlist.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528zm-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656z" fill="#0D0D0D"/></svg>
+      </a>
+      <div class="cart-container">
+        <a href="cart.html" class="icon" style="color: inherit; text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" 
+            stroke="currentColor" width="32" height="32">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M2.25 3h1.386a1.5 1.5 0 0 1 1.415 1.034L5.886
+                6h12.743a1.5 1.5 0 0 1 1.446 1.956l-1.5
+                5a1.5 1.5 0 0 1-1.446 1.044H7.125m0 0L6
+                9m1.125 5.25L5.25 20.25M7.125
+                14.25h9.75M9.75 20.25a.75.75 0 1 1-1.5
+                0 .75.75 0 0 1 1.5 0Zm7.5 0a.75.75 0 1
+                1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </a>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="catalog-controls">
+    <div class="breadcrumb">Home / Men</div>
+    <div class="controls-row">
+      <div>
+        <label for="itemsPerPage">Items per page</label>
+        <select id="itemsPerPage">
+          <option value="8" selected>08</option>
+          <option value="16">16</option>
+        </select>
+      </div>
+      <div>
+        <label for="sortBy">Sort by</label>
+        <select id="sortBy">
+          <option value="highToLow" selected>High to Low</option>
+          <option value="lowToHigh">Low to High</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="catalog-content">
+    <aside class="catalog-filters">
+      <div class="filter-group">
+        <div class="filter-title">SHOP BY TYPE</div>
+        <label><input type="checkbox" class="filter-type" value="Choker"> Choker</label>
+        <label><input type="checkbox" class="filter-type" value="Layered"> Layered</label>
+        <label><input type="checkbox" class="filter-type" value="Kada"> Kada</label>
+        <label><input type="checkbox" class="filter-type" value="Chain"> Chain</label>
+        <label><input type="checkbox" class="filter-type" value="Pendant"> Pendant</label>
+        <label><input type="checkbox" class="filter-type" value="Cuff"> Cuff</label>
+        <label><input type="checkbox" class="filter-type" value="Ring"> Ring</label>
+        <label><input type="checkbox" class="filter-type" value="Stud"> Stud</label>
+        <label><input type="checkbox" class="filter-type" value="Hoop"> Hoop</label>
+        <label><input type="checkbox" class="filter-type" value="Long Chain"> Long Chain</label>
+        <label><input type="checkbox" class="filter-type" value="Bracelet"> Bracelet</label>
+        <label><input type="checkbox" class="filter-type" value="Toe Ring"> Toe Ring</label>
+        <label><input type="checkbox" class="filter-type" value="Anklet"> Anklet</label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">SHOP BY LOOK</div>
+        <label><input type="checkbox" class="filter-look" value="Oxidised"> Oxidised</label>
+        <label><input type="checkbox" class="filter-look" value="Traditional"> Traditional</label>
+        <label><input type="checkbox" class="filter-look" value="Minimal"> Minimal</label>
+        <label><input type="checkbox" class="filter-look" value="Antique"> Antique</label>
+        <label><input type="checkbox" class="filter-look" value="Modern"> Modern</label>
+        <label><input type="checkbox" class="filter-look" value="Casual"> Casual</label>
+        <label><input type="checkbox" class="filter-look" value="Designer"> Designer</label>
+        <label><input type="checkbox" class="filter-look" value="CZ"> CZ</label>
+        <label><input type="checkbox" class="filter-look" value="Simple"> Simple</label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">SHOP BY PRICE</div>
+        <label><input type="checkbox" class="filter-price" value="500-999"> 500-999</label>
+        <label><input type="checkbox" class="filter-price" value="1000-1499"> 1000-1499</label>
+        <label><input type="checkbox" class="filter-price" value="1500-1999"> 1500-1999</label>
+        <label><input type="checkbox" class="filter-price" value="2000-above"> 2000 & above</label>
+      </div>
+      <div class="filter-group">
+        <div class="filter-title">SHOP BY CATEGORY</div>
+        <label><input type="checkbox" class="filter-category" value="Earring"> Earring</label>
+        <label><input type="checkbox" class="filter-category" value="Ring"> Ring</label>
+        <label><input type="checkbox" class="filter-category" value="Bracelet"> Bracelet</label>
+        <label><input type="checkbox" class="filter-category" value="Pendant"> Pendant</label>
+        <label><input type="checkbox" class="filter-category" value="Necklace"> Necklace</label>
+        <label><input type="checkbox" class="filter-category" value="Toe Ring"> Toe Ring</label>
+        <label><input type="checkbox" class="filter-category" value="Anklet"> Anklet</label>
+      </div>
+    </aside>
+    <main>
+      <div class="product-grid" id="productGrid">
+        <!-- Product cards will be rendered here by JS -->
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </main>
+  </div>
+  <script src="productdata.js"></script>
+  <script src="menscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voylla Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Sale Banner -->
+  <div class="top-banner">
+    Summer Sale! Get 25% off on order above ₹1500, Use code: <strong>SUMMER25</strong> + Extra 5% off on Prepaid Orders.
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="images/voylla-logo.png" alt="Voylla Logo" class="logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="madhubani.html">MADHUBANI</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="collections.html">COLLECTIONS</a></li>
+      <li><a href="sterling.html">STERLING SILVER</a></li>
+      <li><a href="gifts.html">FESTIVE GIFTS</a></li>
+    </ul>
+    <div class="nav-right">
+      <!-- Search Bar -->
+      <div class="search-bar" style="position:relative;">
+        <input type="text" id="productSearchInput" placeholder="Search" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          viewBox="0 0 24 24" stroke-width="1.5" 
+          stroke="currentColor" width="32" height="32">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0
+               6.75 6.75a7.5 7.5 0 0 0 9.9 9.9Z" />
+        </svg>
+        <div id="productSearchResults" class="search-results"></div>
+      </div>
+      <a href="user.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          viewBox="0 0 24 24" stroke-width="1.5" 
+          stroke="currentColor" width="32" height="32">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 
+               3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 
+               7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 
+               12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </a>
+      <a href="wishlist.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528zm-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656z" fill="#0D0D0D"/></svg>
+      </a>
+      <div class="cart-container">
+        <a href="cart.html" class="icon" style="color: inherit; text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" 
+            stroke="currentColor" width="32" height="32">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M2.25 3h1.386a1.5 1.5 0 0 1 1.415 1.034L5.886
+                 6h12.743a1.5 1.5 0 0 1 1.446 1.956l-1.5
+                 5a1.5 1.5 0 0 1-1.446 1.044H7.125m0 0L6
+                 9m1.125 5.25L5.25 20.25M7.125
+                 14.25h9.75M9.75 20.25a.75.75 0 1 1-1.5
+                 0 .75.75 0 0 1 1.5 0Zm7.5 0a.75.75 0 1
+                 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </a>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel part -->
+  <div class="carousel-container">
+    <div class="carousel">
+      <a href="earrings.html" class="carousel-item">
+        <div class="image-box"><img src="images/earrings.jpg" alt="Earrings"></div>
+        <p>Earrings</p>
+      </a>
+      <a href="sets.html" class="carousel-item">
+        <div class="image-box"><img src="images/sets.jpg" alt="Sets"></div>
+        <p>Sets</p>
+      </a>
+      <a href="rings.html" class="carousel-item">
+        <div class="image-box"><img src="images/rings.jpg" alt="Rings"></div>
+        <p>Rings</p>
+      </a>
+      <a href="bangles.html" class="carousel-item">
+        <div class="image-box"><img src="images/bangles.jpg" alt="Bangles & Bracelet"></div>
+        <p>Bangles & Bracelet</p>
+      </a>
+      <a href="necklaces.html" class="carousel-item">
+        <div class="image-box"><img src="images/necklaces.jpg" alt="Necklaces"></div>
+        <p>Necklaces</p>
+      </a>
+      <a href="hairaccessory.html" class="carousel-item">
+        <div class="image-box"><img src="images/hair.jpg" alt="Hair Accessory"></div>
+        <p>Hair Accessory</p>
+      </a>
+      <a href="bags.html" class="carousel-item">
+        <div class="image-box"><img src="images/bags.jpg" alt="Bags"></div>
+        <p>Bags</p>
+      </a>
+      <a href="mangalsutra.html" class="carousel-item">
+        <div class="image-box"><img src="images/mangalsutra.jpg" alt="Mangalsutra"></div>
+        <p>Mangalsutra</p>
+      </a>
+      <a href="pendant.html" class="carousel-item">
+        <div class="image-box"><img src="images/pendant.jpg" alt="pendant"></div>
+        <p>Pendant</p>
+      </a>
+      <a href="watches.html" class="carousel-item">
+        <div class="image-box"><img src="images/watches.jpg" alt="watches"></div>
+        <p>Watches</p>
+      </a>
+    </div>
+  </div>
+  <!-- mid section large carousel -->
+  <div class="bigcarousel">
+    <button class="bigcarousel-btn prev" onclick="prevSlide()"> &#10094; </button>
+    <div class="bigcarousel-track">
+      <a href="madhubani.html" class="bigcarousel-slide">
+        <img src="images/bigmadhubani.jpg" alt="Slide 1">
+      </a>
+      <a href="tropical.html" class="bigcarousel-slide">
+        <img src="images/tropical.jpg" alt="Slide 2">
+      </a>
+      <a href="collections.html" class="bigcarousel-slide">
+        <img src="images/summersale.jpg" alt="Slide 3">
+      </a>
+      <a href="blume.html" class="bigcarousel-slide">
+        <img src="images/blume.jpg" alt="Slide 3">
+      </a>
+      <a href="bohotribe.html" class="bigcarousel-slide">
+        <img src="images/bohotribe.jpg" alt="Slide 3">
+      </a>
+      <a href="sterling.html" class="bigcarousel-slide">
+        <img src="images/sparkling.jpg" alt="Slide 3">
+      </a>
+      <a href="men.html" class="bigcarousel-slide">
+        <img src="images/jewelmen.jpg" alt="Slide 3">
+      </a>
+    </div>
+    <button class="bigcarousel-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
+  <div>
+    <img src="images/qualityicons.jpg" alt="qualityicons" style="width: 100%; height: auto; display: block;">
+  </div>
+  <!-- reusable span -->
+  <div class="section-divider">
+    <span class="section-title">NEW LAUNCH</span>
+  </div>
+  <!-- New launch begins here -->
+  <div class="horizontal-scroll-gallery">
+    <div class="gallery-track">
+      <div class="gallery-card">
+        <div class="main-image-wrapper">
+          <img src="images/bohotribemain.jpg" alt="Main 1" class="main-image"/>
+          <div class="overlay-thumbnails">
+            <img src="images/bohotribemain1.jpg" alt="Thumb 1a" class="thumb-image"/>
+            <img src="images/bohotribemain2.jpg" alt="Thumb 1b" class="thumb-image"/>
+            <img src="images/bohotribemain3.jpg" alt="Thumb 1c" class="thumb-image"/>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="main-image-wrapper">
+          <img src="images/wovenwonder.jpg" alt="Main 2" class="main-image"/>
+          <div class="overlay-thumbnails">
+            <img src="images/wovenwonder1.jpg" alt="Thumb 2a" class="thumb-image"/>
+            <img src="images/wovenwonder2.jpg" alt="Thumb 2b" class="thumb-image"/>
+            <img src="images/wovenwonder3.jpg" alt="Thumb 2c" class="thumb-image"/>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="main-image-wrapper">
+          <img src="images/panchi.jpg" alt="Main 3" class="main-image"/>
+          <div class="overlay-thumbnails">
+            <img src="images/panchi1.jpg" alt="Thumb 3a" class="thumb-image"/>
+            <img src="images/panchi2.jpg" alt="Thumb 3b" class="thumb-image"/>
+            <img src="images/panchi3.jpg" alt="Thumb 3c" class="thumb-image"/>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="main-image-wrapper">
+          <img src="images/royal.jpg" alt="Main 3" class="main-image"/>
+          <div class="overlay-thumbnails">
+            <img src="images/royal1.jpg" alt="Thumb 3a" class="thumb-image"/>
+            <img src="images/royal2.jpg" alt="Thumb 3b" class="thumb-image"/>
+            <img src="images/royal3..jpg" alt="Thumb 3c" class="thumb-image"/>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card">
+        <div class="main-image-wrapper">
+          <img src="images/alpana.jpg" alt="Main 3" class="main-image"/>
+          <div class="overlay-thumbnails">
+            <img src="images/alpana1.jpg" alt="Thumb 3a" class="thumb-image"/>
+            <img src="images/alpana2.jpg" alt="Thumb 3b" class="thumb-image"/>
+            <img src="images/alpana3.jpg" alt="Thumb 3c" class="thumb-image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NEW SEASON BOHO BREEZE / FRINGES SECTION (DYNAMIC) -->
+   <div class="section-divider">
+    <span class="section-title">NEW SEASON BOHO BREEZE</span>
+  </div>
+  <div class="product-horizontal-scroll">
+    <div class="product-track" id="fringeProductTrack">
+      <!-- Fringes products will be rendered here -->
+    </div>
+  </div>
+  <!-- collections part begins here -->
+  <div class="section-divider">
+    <span class="section-title">COLLECTIONS</span>
+  </div>
+  <div class="wide-scroll-section">
+    <div class="wide-scroll-track">
+      <div class="wide-card">
+        <img src="images/morni.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/pashmina.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/before-sunrise.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/heer.jpg" alt="" class="wide-card-image"/>
+      </div>
+    </div>
+  </div>
+  <!-- pure silver part begins here -->
+  <div class="section-divider">
+    <span class="section-title">PURE SILVER</span>
+  </div>
+  <div class="six-image-section">
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/ssrings.jpg" alt="" class="six-image"/>
+    </a>
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/sspendants.jpg" alt="" class="six-image"/>
+    </a>
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/ssbracelets.jpg" alt="" class="six-image"/>
+    </a>
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/ssearrings.jpg" alt="" class="six-image"/>
+    </a>
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/sspendantssets.jpg" alt="" class="six-image"/>
+    </a>
+    <a href="sterling.html" class="six-image-card">
+      <img src="images/sscouplerings.jpg" alt="" class="six-image"/>
+    </a>
+  </div>
+  <!-- shop by style part begins here -->
+  <div class="section-divider">
+    <span class="section-title">SHOP BY STYLE</span>
+  </div>
+  <div class="wide-scroll-section">
+    <div class="wide-scroll-track">
+      <div class="wide-card">
+        <img src="images/ultraglam.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/classictraditional.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/modernfusion.jpg" alt="" class="wide-card-image"/>
+      </div>
+      <div class="wide-card">
+        <img src="images/ethnic.jpg" alt="" class="wide-card-image"/>
+      </div>
+    </div>
+  </div>
+  <!-- best seller part begins here -->
+   <div class="section-divider">
+    <span class="section-title">BEST SELLERS</span>
+  </div>
+  <div class="product-horizontal-scroll">
+    <div class="product-track" id="bestsellerProductTrack">
+      <!-- Best seller products (Fringes 81-86) will be rendered here -->
+    </div>
+  </div>
+  <!-- gift part begins here -->
+  <div class="gift-grid-section">
+    <div class="gift-grid">
+      <div class="gift-grid-left">
+        <div class="gift-image-block">
+          <img src="images/giftforher.jpg" alt="" class="gift-main-image"/>
+        </div>
+        <div class="gift-info-block">
+          <h2 class="gift-title">GIFT FOR HER</h2>
+          <div class="gift-desc">
+            For the woman who deserves all the sparkle in world!
+          </div>
+          <a href="women.html"><button class="gift-btn">GIFT NOW</button></a>
+        </div>
+      </div>
+      <div class="gift-grid-right">
+        <div class="gift-info-block">
+          <h2 class="gift-title">GIFT FOR HIM</h2>
+          <div class="gift-desc">
+            The Perfect Gift for the Perfect Man!
+          </div>
+          <a href="men.html"><button class="gift-btn">GIFT NOW</button></a>
+        </div>
+        <div class="gift-image-block">
+          <img src="images/giftforhim.jpg" alt="" class="gift-main-image"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- trending looks begins here -->
+  <div class="section-divider">
+    <span class="section-title">TRENDING LOOKS</span>
+  </div>
+  <div class="video-style-scroll-section">
+    <div class="video-style-scroll-track">
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid.mp4" autoplay muted loop playsinline poster="poster1.jpg"></video>
+      </div>
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid1.mp4" autoplay muted loop playsinline poster="poster2.jpg"></video>
+      </div>
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid2.mp4" autoplay muted loop playsinline poster="poster3.jpg"></video>
+      </div>
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid3.mp4" autoplay muted loop playsinline poster="poster4.jpg"></video>
+      </div>
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid4.mp4" autoplay muted loop playsinline poster="poster4.jpg"></video>
+      </div>
+      <div class="video-style-card">
+        <video class="video-style-media" src="videos/voyllavid5.mp4" autoplay muted loop playsinline poster="poster4.jpg"></video>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img src="images/qualityicons.jpg" alt="qualityicons" style="width: 100%; height: auto; display: block;">
+  </div>
+  <!-- newsletter section begins here -->
+  <footer class="newsletter-footer">
+    <div class="newsletter-header">
+      <h2>NEWSLETTER</h2>
+      <p>Sign up for new arrivals, offers, and more!</p>
+    </div>
+    <form class="newsletter-form">
+      <input type="email" placeholder="enter your email address" required>
+      <button type="submit">SUBSCRIBE</button>
+    </form>
+    <div class="footer-main">
+      <div class="footer-col">
+        <h3>Associate With Us</h3>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Franchisee</a></li>
+          <li><a href="#">Request a return</a></li>
+          <li><a href="#">FAQ’s</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Stores</a></li>
+          <li><a href="#">Core Values</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Policy Matters</h3>
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">International Shipping Policy</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Return & Exchange</a></li>
+          <li><a href="#">Grievance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <ul>
+          <li><span class="footer-icon">&#128222;</span> +91 XXXXX XXXXX</li>
+          <li><span class="footer-icon">&#9993;</span> help@voylla.com</li>
+          <li>
+            J 449/450, RIICO Industrial Area<br>
+            Sitapura Near Chatrala Circle<br>
+            Jaipur, Rajasthan-302022<br>
+            India
+          </li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><span class="footer-social-icon">f</span></a>
+          <a href="#"><span class="footer-social-icon">t</span></a>
+          <a href="#"><span class="footer-social-icon">i</span></a>
+          <a href="#"><span class="footer-social-icon">p</span></a>
+          <a href="#"><span class="footer-social-icon">y</span></a>
+          <img src="images/makeinindia.jpg" alt="Make In India" class="footer-makeinindia">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="productdata.js"></script>
+  <script src="script.js"></script>
+  <script src="popup.js"></script>
+  <script>
+  // Renders only products with id 81-86 in the "NEW SEASON BOHO BREEZE" section
+  function renderFringeProducts() {
+    const track = document.getElementById('fringeProductTrack');
+    if (!track || typeof products === 'undefined') return;
+    track.innerHTML = '';
+
+    const fringeProducts = products.filter(
+      p => p.id >= 81 && p.id <= 86
+    );
+
+    if (fringeProducts.length === 0) {
+      track.innerHTML = '<div style="padding:24px;color:#888;">No Fringes products found.</div>';
+      return;
+    }
+
+    fringeProducts.forEach(p => {
+      track.innerHTML += `
+        <a class="product-card" href="product.html?id=${p.id}">
+          <div class="product-image-wrapper">
+            <img src="${p.image}" alt="${p.title}" class="product-image"/>
+            <div class="discount-badge">- ${p.discount}%</div>
+          </div>
+          <div class="product-title">${p.title}</div>
+          <div class="product-prices">
+            <span class="original-price">₹ ${p.originalPrice.toLocaleString()}</span>
+            <span class="current-price">₹ ${p.currentPrice.toLocaleString()}</span>
+          </div>
+          <button class="add-to-cart-btn" data-id="${p.id}" onclick="event.preventDefault(); addToCart(${p.id}); this.textContent='ADDED!'; this.disabled = true; setTimeout(()=>{this.textContent='ADD TO CART'; this.disabled=false;},900);">ADD TO CART</button>
+        </a>
+      `;
+    });
+  }
+
+  // Renders only products with id 81-86 in the "BEST SELLERS" section
+  function renderBestsellerProducts() {
+    const track = document.getElementById('bestsellerProductTrack');
+    if (!track || typeof products === 'undefined') return;
+    track.innerHTML = '';
+
+    const bestsellers = products.filter(
+      p => p.id >= 81 && p.id <= 86
+    );
+
+    if (bestsellers.length === 0) {
+      track.innerHTML = '<div style="padding:24px;color:#888;">No Best Sellers found.</div>';
+      return;
+    }
+
+    bestsellers.forEach(p => {
+      track.innerHTML += `
+        <a class="product-card" href="product.html?id=${p.id}">
+          <div class="product-image-wrapper">
+            <img src="${p.image}" alt="${p.title}" class="product-image"/>
+            <div class="discount-badge">- ${p.discount}%</div>
+          </div>
+          <div class="product-title">${p.title}</div>
+          <div class="product-prices">
+            <span class="original-price">₹ ${p.originalPrice.toLocaleString()}</span>
+            <span class="current-price">₹ ${p.currentPrice.toLocaleString()}</span>
+          </div>
+          <button class="add-to-cart-btn" data-id="${p.id}" onclick="event.preventDefault(); addToCart(${p.id}); this.textContent='ADDED!'; this.disabled = true; setTimeout(()=>{this.textContent='ADD TO CART'; this.disabled=false;},900);">ADD TO CART</button>
+        </a>
+      `;
+    });
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    renderFringeProducts();
+    renderBestsellerProducts();
+
+    
+  });
+</script>
+</body>
+</html>

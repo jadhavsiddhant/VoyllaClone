@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Top Sale Banner -->
+  <div class="top-banner">
+    Summer Sale! Get 25% off on order above ₹1500, Use code: <strong>SUMMER25</strong> + Extra 5% off on Prepaid Orders.
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="images/voylla-logo.png" alt="Voylla Logo" class="logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="madhubani.html">MADHUBANI</a></li>
+      <li><a href="women.html">WOMEN</a></li>
+      <li><a href="men.html">MEN</a></li>
+      <li><a href="collections.html">COLLECTIONS</a></li>
+      <li><a href="sterling.html">STERLING SILVER</a></li>
+      <li><a href="gifts.html">FESTIVE GIFTS</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          viewBox="0 0 24 24" stroke-width="1.5" 
+          stroke="currentColor" width="32" height="32">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0
+              6.75 6.75a7.5 7.5 0 0 0 9.9 9.9Z" />
+        </svg>
+      </div>
+      <a href="user.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
+          viewBox="0 0 24 24" stroke-width="1.5" 
+          stroke="currentColor" width="32" height="32">
+          <path stroke-linecap="round" stroke-linejoin="round" 
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 
+              3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 
+              7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 
+              12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      </a>
+      <a href="wishlist.html" class="icon" style="color: inherit; text-decoration: none;">
+        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4.528a6 6 0 0 0-8.243 8.715l6.829 6.828a2 2 0 0 0 2.828 0l6.829-6.828A6 6 0 0 0 12 4.528zm-1.172 1.644l.465.464a1 1 0 0 0 1.414 0l.465-.464a4 4 0 1 1 5.656 5.656L12 18.657l-6.828-6.829a4 4 0 0 1 5.656-5.656z" fill="#0D0D0D"/></svg>
+      </a>
+      <div class="cart-container">
+        <a href="cart.html" class="icon" style="color: inherit; text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" 
+            stroke="currentColor" width="32" height="32">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M2.25 3h1.386a1.5 1.5 0 0 1 1.415 1.034L5.886
+              6h12.743a1.5 1.5 0 0 1 1.446 1.956l-1.5
+              5a1.5 1.5 0 0 1-1.446 1.044H7.125m0 0L6
+              9m1.125 5.25L5.25 20.25M7.125
+              14.25h9.75M9.75 20.25a.75.75 0 1 1-1.5
+              0 .75.75 0 0 1 1.5 0Zm7.5 0a.75.75 0 1
+              1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+          </svg>
+        </a>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </nav>
+
+  <main class="cart-main">
+    <h1>Your Cart</h1>
+    <div id="cart-container">
+      <!-- JS will render cart table here -->
+    </div>
+    <div class="cart-summary" id="cart-summary" style="display:none;">
+      <div class="cart-total-row">
+        <span>Total:</span>
+        <span id="cart-total">₹0</span>
+      </div>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+    <div id="empty-cart-message" style="text-align:center; margin:40px 0; display:none;">
+      <p>Your cart is empty. <a href="index.html">Shop now!</a></p>
+    </div>
+  </main>
+
+  <script src="productdata.js"></script>
+  <script src="cartscript.js"></script>
+</body>
+</html>
