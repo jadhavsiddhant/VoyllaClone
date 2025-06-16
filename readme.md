@@ -11,7 +11,7 @@ All features, UI, and product data are for academic demonstration only.
 ---
 ## Tech Stack
 
-- HTML, CSS (Responsive, mobile-first)
+- HTML, CSS (Responsive)
 - JavaScript (Dynamic product display, cart, wishlist)
 - Figma (UI/UX prototyping)
 
