@@ -4,7 +4,7 @@ This project is a responsive e-commerce website for fashion and costume jewelry,
 
 **Important Notice:**  
 This site is built **strictly as a college project** for educational and demonstration purposes only.  
-It is **not affiliated with Voylla** or any official brand, and is **not intended for commercial use, deployment, or distribution**.
+It is **not affiliated with Voylla** or any official brand, and is **not intended for commercial use or distribution**.
 
 All features, UI, and product data are for academic demonstration only.
 
